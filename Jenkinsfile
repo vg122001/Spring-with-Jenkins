@@ -19,13 +19,6 @@ pipeline {
                 }
             }
         }
-        stage('Run container') {
-            steps {
-                script {
-                      
-                    sh 'docker run -d -p 8081:8080 my-spring-boot-app:vashali'
-                }
-            }
-        }
+        
     }
 }
